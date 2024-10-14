@@ -98,21 +98,44 @@
     text-align: start;
  }
  .Projects {
-    height: 700px;
- }
- .project {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    text-align: center;
- }
- 
- .project .card {
-    height: 90px;
-    margin-right: 0.25rem;
- }
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+.project {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.card {
+   margin-right : 10px;
+}
+
+@media screen and (min-width: 600px) {
+   .Projects {
+       max-width: 1000px;
+   }
+
+   .card {
+       width: 45%; /* Two items per row on medium screens */
+   }
+}
+
+@media screen and (min-width: 900px) {
+   .card {
+       width: 30%; /* Three items per row on larger screens */
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   .card {
+       width: 22%; /* Four items per row on extra large screens */
+   }
+}
+
  .footer {
     height: 70px;
     width:93%;
