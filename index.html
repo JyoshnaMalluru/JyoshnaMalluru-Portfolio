@@ -4,12 +4,10 @@
   <meta charset="UTF-8">
   <title>Jyoshna Malluru - Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Font Awesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="profile-header">
       <img src="profile.jpg" alt="Jyoshna Malluru">
@@ -26,11 +24,7 @@
       <li><a href="#AboutMe"><i class="fas fa-user"></i>About Me</a></li>
     </ul>
   </nav>
-
-  <!-- MAIN CONTENT -->
   <main class="Info">
-    <!-- EDUCATION -->
-    <!-- EDUCATION SECTION -->
 <section id="Education">
   <h1><i class="fas fa-graduation-cap"></i> Education</h1>
   <div class="education-list">
@@ -58,9 +52,6 @@
     </div>
   </div>
 </section>
-
-
-    <!-- SKILLS -->
     <section id="Skills">
       <h2><i class="fas fa-lightbulb"></i> Skills</h2>
       <div class="skills-container">
@@ -72,8 +63,6 @@
         <div class="skill-card"><i class="fas fa-cubes"></i>OOPs / Problem Solving</div>
       </div>
     </section>
-
-    <!-- PROJECTS -->
     <section id="Projects">
       <h2><i class="fas fa-diagram-project"></i> Projects</h2>
       <div class="projects-grid">
@@ -122,7 +111,6 @@
       </div>
     </section>
 
-    <!-- ABOUT ME -->
     <section id="AboutMe">
       <h2><i class="fas fa-user"></i> About Me</h2>
       <div class="about-container">
@@ -138,8 +126,6 @@
         </div>
       </div>
     </section>
-
-    <!-- FOOTER -->
     <div class="footer">
       <span>&copy; Venkata Nagasai Jyoshna Malluru</span>
       <span>
@@ -150,14 +136,12 @@
     </div>
   </main>
   <script>
-    // Hamburger menu for mobile
     const navToggle = document.querySelector('.nav-toggle');
     const sidebar = document.getElementById('navMenu');
     navToggle.addEventListener('click', () => {
       sidebar.classList.toggle('open');
       navToggle.setAttribute("aria-expanded", sidebar.classList.contains('open'));
     });
-    // Close nav on link click (mobile)
     document.querySelectorAll('.sidebar a').forEach(link => {
       link.addEventListener('click', () => {
         if(window.innerWidth < 701) sidebar.classList.remove('open');
