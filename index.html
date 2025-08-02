@@ -1,166 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jyoshna Malluru-Portfolio</title>
-    <link rel="icon" href="C:\Users\my lap\.vscode\Jyoshna Malluru\JyoshnaMalluru-Icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Jyoshna Malluru - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class=" row portfolio">
-    <div class="navbar">
-        <img src="JyoshnaPhoto.jpg"alt="My Photo" >
-        <div class="profile-name">
-            <h1>Jyoshna Malluru</h1>
-            <p>✨Aspiring Software Developer✨</p>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="profile-header">
+      <img src="profile.jpg" alt="Jyoshna Malluru">
+      <div style="flex-direction: column;">
+        <h3 class="profile-name">Venkata Nagasai Jyoshna Malluru</h3>
+        <h5 class="subtitle">✨ Aspiring Software Developer ✨</h5>
+      </div>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+    <ul class="sidebar" id="navMenu">
+      <li><a href="#Education"><i class="fas fa-graduation-cap"></i>Education</a></li>
+      <li><a href="#Skills"><i class="fas fa-code"></i>Skills</a></li>
+      <li><a href="#Projects"><i class="fas fa-diagram-project"></i>Projects</a></li>
+      <li><a href="#AboutMe"><i class="fas fa-user"></i>About Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="Info">
+    <!-- EDUCATION -->
+    <!-- EDUCATION SECTION -->
+<section id="Education">
+  <h1><i class="fas fa-graduation-cap"></i> Education</h1>
+  <div class="education-list">
+    <div class="edu-card">
+      <div class="edu-degree">Bachelor of Technology, ECE &nbsp;&nbsp; (2022-2026)</div>
+      <div class="edu-year"></div>
+      <div class="edu-school">Mohan Babu University, Tirupati (Andhra Pradesh)</div>
+      <div class="edu-marks">CGPA : 9.12</div>
+    </div>
+  </div>
+  <div class="education-list">
+    <div class="edu-card">
+      <div class="edu-degree">Intermediate &nbsp;&nbsp; (2020-2022)</div>
+      <div class="edu-year"></div>
+      <div class="edu-school">Narayana Junior College, Nellore (Andhra Pradesh)</div>
+      <div class="edu-marks">Percentage : 97.60 / 100</div>
+    </div>
+  </div>
+  <div class="education-list">
+    <div class="edu-card">
+      <div class="edu-degree">X class &nbsp;&nbsp; (2019-2020)</div>
+      <div class="edu-year"></div>
+      <div class="edu-school">Sri Vivekananda High School, Nellore (Andhra Pradesh)</div>
+      <div class="edu-marks">CGPA : 9.3 / 10</div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- SKILLS -->
+    <section id="Skills">
+      <h2><i class="fas fa-lightbulb"></i> Skills</h2>
+      <div class="skills-container">
+        <div class="skill-card"><i class="fas fa-terminal"></i>Java</div>
+        <div class="skill-card"><i class="fab fa-html5"></i>HTML, CSS, JavaScript</div>
+        <div class="skill-card"><i class="fab fa-react"></i>React.js, Express.js</div>
+        <div class="skill-card"><i class="fab fa-github"></i>GitHub, VS Code</div>
+        <div class="skill-card"><i class="fas fa-database"></i>MySQL, MongoDB</div>
+        <div class="skill-card"><i class="fas fa-cubes"></i>OOPs / Problem Solving</div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="Projects">
+      <h2><i class="fas fa-diagram-project"></i> Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div>
+            <div class="project-title">FoodShare Neighborly </div>
+            <div class="project-desc">A role-based platform for sharing leftover food where Donors post, Receivers request, Admins assign Volunteers, and users access personalized dashboards.</div>
+          </div>
+          <a href="https://github.com/JyoshnaMalluru/Food-Share-" class="btn" target="_blank"><i class="fas fa-arrow-right"></i> Project Link</a>
         </div>
-        <br/>
-        <nav class="sidebar">
-            <a class="nav-link ms-3" href="#Education">Education</a>
-            <a class="nav-link ms-3" href="#Skills">Skills</a>
-            <a class="nav-link ms-3" href="#Projects">Projects</a>
-            <a class="nav-link ms-3" href="#AboutMe">About Me</a>
-        </nav>
+        <div class="project-card">
+          <div>
+            <div class="project-title">SmartNews Hub</div>
+            <div class="project-desc">A dynamic platform that displays top news from multiple sources with search and filter options, letting users access full articles via external links.</div>
+          </div>
+          <a href="https://github.com/JyoshnaMalluru/Top-Stories" class="btn" target="_blank"><i class="fas fa-arrow-right"></i> Project Link</a>
+        </div>
+        <div class="project-card">
+          <div>
+            <div class="project-title">Medi Connect</div>
+            <div class="project-desc">A hospital system with role-based dashboards, doctor appointment booking, Razorpay payments, and an admin panel for managing users and operations.</div>
+          </div>
+          <a href="https://github.com/JyoshnaMalluru/Connect-Med" class="btn" target="_blank"><i class="fas fa-arrow-right"></i> Project Link</a>
+        </div>
+        <div class="project-card">
+          <div>
+            <div class="project-title">Journey Nest</div>
+            <div class="project-desc">A full-stack platform to explore travel destinations, write reviews, and access detailed info with secure user authentication for personalized experiences.</div>
+          </div>
+          <a href="https://github.com/JyoshnaMalluru/MAJORPROJECT" class="btn" target="_blank"><i class="fas fa-arrow-right"></i> Project Link</a>
+        </div>
+        <div class="project-card">
+          <div>
+            <div class="project-title">VidoMeet</div>
+            <div class="project-desc">A web-based app enabling users to create and join virtual meetings with unique room links, real-time video/audio, and secure authentication.</div>
+          </div>
+          <a href="https://github.com/JyoshnaMalluru/VidoMeet" class="btn" target="_blank"><i class="fas fa-arrow-right"></i> Project Link</a>
+        </div>
+        <div class="project-card">
+          <div>
+            <div class="project-title">Pick Images</div>
+            <div class="project-desc">A web app that lets users search, view, and download high-quality images using Unsplash API with a clean, responsive UI.</div>
+          </div>
+          <a href="https://github.com/JyoshnaMalluru/Pick-Images" class="btn" target="_blank"><i class="fas fa-arrow-right"></i> Project Link</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="AboutMe">
+      <h2><i class="fas fa-user"></i> About Me</h2>
+      <div class="about-container">
+        <div class="about-card">
+          I am currently pursuing my B.Tech at Mohan Babu University, Tirupati. My goal is to start a career in software development, and I am actively seeking an internship position in a reputed organization. I am eager to explore various aspects of this field and contribute effectively to the organization. My determination, dedication, and willingness to learn will help me enhance my talents.Additionally, I am open to learning new tech stacks and experimenting with the latest technologies.
+        </div>
+        <div class="about-contact">
+          <span><i class="fas fa-phone"></i> +91 7981330177</span>
+          <span><i class="fas fa-envelope"></i> jyoshna1595@gmail.com</span>
+          <span><i class="fas fa-map-marker-alt"></i> Andhra Pradesh, India</span>
+          <a href="https://www.linkedin.com/in/jyoshnamalluru/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/JyoshnaMalluru" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <span>&copy; Venkata Nagasai Jyoshna Malluru</span>
+      <span>
+        <a href="mailto:jyoshna1595@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/jyoshnamalluru/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/JyoshnaMalluru" target="_blank"><i class="fab fa-github"></i></a>
+      </span>
     </div>
-        <div class="Info">
-            <section id="Education">
-                <h1><i class="fa-solid fa-user-graduate"></i> Education</h1>
-                <div class="card" style="width: 31rem;">
-                    <div class="card-body">
-                      <h6 class="card-title">Graduation</h6>
-                      <p class="card-text">Mohan Babu University, Tirupati (Andhra Pradesh)<br/>2022-2026<br/>Bachelor of Technology<br/>
-                         CGPA : 9.13</p>
-                    </div>
-                  </div>
-                  <div class="card" style="width: 31rem;">
-                    <div class="card-body">
-                      <h6 class="card-title">Senior Secondary (XII)</h6>
-                      <p class="card-text">Narayana Junior College (Board of Intermediate Education, Andhra Pradesh)<br/>2020-2022 <br/>
-                        Percentage : 97.60 / 100 </p>
-                    </div>
-                  </div>
-                  <div class="card" style="width: 31rem;">
-                    <div class="card-body">
-                      <h6 class="card-title">Secondary (X)</h6>
-                      <p class="card-text">Sri Vivekananda High School(Board of Secondary Education, Andhra Pradesh)<br/>2019-2020 <br/>
-                        CGPA : 9.3 / 10 </p>
-                    </div>
-                  </div>
-            </section>
-            <section id="Skills" class="Skills">
-                <h1><i class="fa-solid fa-code"></i> Skills</h1>
-                <div class="card" style="width: 25rem;">
-                    <div class="card-body">
-                      <h6 class="card-title">Programming Languages</h6>
-                      <p class="card-text">Java</p>
-                    </div>
-                  </div>
-                  <div class="card" style="width: 25rem;">
-                    <div class="card-body">
-                      <h6 class="card-title">Web Development</h6>
-                      <p class="card-text">HTML, CSS, Java Script</p>
-                    </div>
-                  </div>
-                  <div class="card" style="width: 25rem;">
-                    <div class="card-body">
-                      <h6 class="card-title">Frameworks</h6>
-                      <p class="card-text">React.js, Express.js</p>
-                    </div>
-                  </div>
-                  <div class="card" style="width: 25rem;">
-                    <div class="card-body">
-                      <h6 class="card-title">Version Control</h6>
-                      <p class="card-text">GitHub, VS Code</p>
-                    </div>
-                  </div>
-                  <div class="card" style="width: 25rem;">
-                    <div class="card-body">
-                      <h6 class="card-title">DataBases</h6>
-                      <p class="card-text">My SQL, Mongo DB</p>
-                    </div>
-                  </div>
-                  <div class="card" style="width: 25rem;">
-                    <div class="card-body">
-                      <h6 class="card-title">Design</h6>
-                      <p class="card-text">Object Oriented Programming (OOPs)</p>
-                    </div>
-                  </div>
-            </section>
-            <section id="Projects" class="Projects">
-                <h1><i class="fa-solid fa-laptop-code"></i> Projects</h1>
-                <div class="project">
-                  <div class="card" style="width: 15rem;">
-                      <div class="card-body">
-                          <h6 class="card-title">Top Stories</h6>
-                          <p class="card-text">Displays news headlines
-                            from various newspapers, and direct links for full articles</p>
-                          <a href="">Project Link</a>
-                      </div>
-                  </div>
-                  <div class="card" style="width: 15rem;">
-                      <div class="card-body">
-                          <h6 class="card-title">Vido Meet</h6>
-                          <p class="card-text">Developed a video calling application with screen
-                            sharing and integrated chatfeatures.</p>
-                          <a href="">Project Link</a>
-                      </div>
-                  </div>
-              </div>
-                <div class="project">
-                    <div class="card" style="width: 17rem;">
-                        <div class="card-body">
-                            <h6 class="card-title">WanderLust</h6>
-                            <p class="card-text">Market Place for long and short term home stays and experiences</p>
-                            <a href="">Project Link</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 17rem;">
-                        <div class="card-body" >
-                            <h6 class="card-title">Pick Images</h6>
-                            <p class="card-text">A Web Application that produces images based on user input</p>
-                            <a href="">Project Link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                  <div class="card" style="width: 15rem;">
-                      <div class="card-body">
-                          <h6 class="card-title">Foodie Sphere</h6>
-                          <p class="card-text">A web app displaying fooditems, enable
-                            users to add, edit, and delete items using RESTful APIs</p>
-                          <a href="">Project Link</a>
-                      </div>
-                  </div>
-                  <div class="card" style="width: 15rem;">
-                      <div class="card-body">
-                          <h6 class="card-title">Weather Widget</h6>
-                          <p class="card-text">React - Finds weather at various locations all over world</p>
-                          <a href="">Project Link</a>
-                      </div>
-                  </div>
-              </div>
-            </section>
-            <section id="AboutMe" class="AboutMe ">
-                <h1><i class="fa-solid fa-user"></i> About Me</h1>
-                <div class="card" style="width: 43rem;">
-                    <div class="card-body">
-                      <p class="card-text">I am currently pursuing my B.Tech at Mohan Babu University, Tirupati. My goal is to start a career in software development, and I am actively seeking an internship position in a reputed organization. I am eager to explore various aspects of this field and contribute effectively to the organization. My determination, dedication, and willingness to learn will help me enhance my talents. Additionally, I am open to learning new tech stacks and experimenting with the latest technologies.</p>
-                    </div>
-                  </div>
-            </section>
-            <footer class="footer">
-                <p><i class="fa-solid fa-phone"></i> +91 7981330177</p>
-                <p><i class="fa-solid fa-envelope"></i> jyoshna1595@gmail.com</p>
-                <p><i class="fa-solid fa-location-dot"></i> Andhra Pradesh, India</p>
-                <a href="https://www.linkedin.com/in/jyoshnamalluru/"><i class="fa-brands fa-linkedin"></i> Linked In</a>
-                <a href="https://github.com/JyoshnaMalluru"><i class="fa-brands fa-github"></i> GitHub</a>
-            </footer>
-        </div> 
-    </div>
+  </main>
+  <script>
+    // Hamburger menu for mobile
+    const navToggle = document.querySelector('.nav-toggle');
+    const sidebar = document.getElementById('navMenu');
+    navToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('open');
+      navToggle.setAttribute("aria-expanded", sidebar.classList.contains('open'));
+    });
+    // Close nav on link click (mobile)
+    document.querySelectorAll('.sidebar a').forEach(link => {
+      link.addEventListener('click', () => {
+        if(window.innerWidth < 701) sidebar.classList.remove('open');
+      });
+    });
+  </script>
 </body>
 </html>
